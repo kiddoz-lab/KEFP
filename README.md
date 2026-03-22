@@ -1,2 +1,2 @@
 # KEFP
-***KEFP is a tool to encrypt and decrypt your files***, and _entire folders into one file_ its lightweight and, the encryption is, very effective and, this softwware does not break your files, and you are encrypt any file format you want and decrypt them without any damage to your files.
+<ins>***KEFP is a tool to encrypt and decrypt your files***</ins>, and <ins>entire folders into one file</ins> its *lightweight* and, the **encryption is, very effective** and, this **software does not break your files**, and you can **encrypt any file format** you want and **decrypt without any damage to your files.**
