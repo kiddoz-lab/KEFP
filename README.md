@@ -29,3 +29,7 @@
 - Unpackage: The structured stream is converted back into folders.
 
 ***
+
+# How to use
+
+- download by clicking **[here.](https://github.com/kiddoz-lab/KEFP/raw/refs/heads/main/kefp-installer.exe)**
