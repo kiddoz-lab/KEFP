@@ -21,11 +21,11 @@ void print_bar(int p, std::string task) {
 }
 
 int main() {
-    std::string base_url = "https://raw.githubusercontent.com/KiddoZ-Xperiments/KEFP/main/bin/";
+    std::string base_url = "https://raw.githubusercontent.com/kiddoz-lab/KEFP/main/bin/";
     std::string root = "C:\\KiddoZ\\KEFP";
     
-    std::cout << BLUE << "--- KiddoZ Installer v1.0 ---" << RESET << std::endl;
-    std::cout << YELLOW << "[STEP 1/3] Creating Local Architecture..." << RESET << std::endl;
+    std::cout << BLUE << "--- KEFP Installer V1.5 ---" << RESET << std::endl;
+    std::cout << YELLOW << "[STEP 1/3] Creating Local Builds..." << RESET << std::endl;
 
     if (!fs::exists(root)) fs::create_directories(root);
     if (!fs::exists(root + "\\tools")) fs::create_directories(root + "\\tools");
@@ -43,7 +43,7 @@ int main() {
         {"assets/LICENSE.md", root + "\\assets\\LICENSE.md"}
     };
 
-    std::cout << YELLOW << "[STEP 2/3] Transporting Components from GitHub..." << RESET << std::endl;
+    std::cout << YELLOW << "[STEP 2/3] Installing Components from KEFP Repository..." << RESET << std::endl;
     for (size_t i = 0; i < files.size(); ++i) {
         int percent = ((i + 1) * 100) / files.size();
         print_bar(percent, "Fetching: " + files[i].first);
@@ -54,8 +54,7 @@ int main() {
     std::string path_cmd = "powershell -Command \"[Environment]::SetEnvironmentVariable('Path', [Environment]::GetEnvironmentVariable('Path', 'User') + ';" + root + "', 'User')\"";
     system(path_cmd.c_str());
 
-    std::cout << std::endl << GREEN << ">>> KiddoZ System Successfully Transported! <<<" << RESET << std::endl;
-    std::cout << "Open a new terminal and type 'kefp' to begin." << std::endl;
+    std::cout << std::endl << GREEN << ">>> KiddoZ System Successfully Installed! <<<" << RESET << std::endl;
     
     Sleep(5000);
     return 0;

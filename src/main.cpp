@@ -1,11 +1,6 @@
 #include <iostream>
 #include <string>
-#ifdef _WIN32
 #include <windows.h>
-extern "C" int WINAPI WinMain(HINSTANCE hInst, HINSTANCE hPrev, LPSTR szCmdLine, int sw) {
-    return main(__argc, __argv);
-}
-#endif
 #include <vector>
 
 const std::string BLUE = "\033[34m";
@@ -19,7 +14,7 @@ void call_tool(std::string exe, std::string args) {
 
 void show_help() {
     std::cout << BLUE << "==================================================" << RESET << std::endl;
-    std::cout << BLUE << "|  KEFP Manual v1.0 | KiddoZ Xperiments | Help |  " << RESET << std::endl;
+    std::cout << BLUE << "|  KEFP Manual v1.5 | KiddoZ Xperiments | Help |  " << RESET << std::endl;
     std::cout << BLUE << "==================================================" << RESET << std::endl;
     std::cout << "Usage: kefp --[option] [arguments]" << std::endl << std::endl;
     
@@ -28,13 +23,13 @@ void show_help() {
     std::cout << "  --decrypt [file] -o [path] : Extracts and decrypt files" << std::endl << std::endl;
     
     std::cout << BLUE << "SYSTEM & UPDATES:" << RESET << std::endl;
-    std::cout << "  --update                   : Update the files to the newest version" << std::endl;
-    std::cout << "  --version                  : View the current Version" << std::endl;
-    std::cout << "  --uninstall                : Wipes all the data of KEFP from your system" << std::endl << std::endl;
+    std::cout << "  --update                   : Update files from KEFP's repo" << std::endl;
+    std::cout << "  --version                  : View the current Version of KEFP" << std::endl;
+    std::cout << "  --uninstall                : Deletes KEFP files from your system" << std::endl << std::endl;
     
     std::cout << BLUE << "EXTRAS:" << RESET << std::endl;
-    std::cout << "  --tts \"[text]\"             : Generate voice.mp3 via Google's tts service" << std::endl;
-    std::cout << "  --licence                  : Open and view the 'KiddoZ Freedom License'" << std::endl;
+    std::cout << "  --tts \"[text]\"           : Generate voice.mp3 via Google's tts service" << std::endl;
+    std::cout << "  --licence                  : Open and view the KiddoZ Freedom License" << std::endl;
     std::cout << BLUE << "==================================================" << RESET << std::endl;
 }
 
@@ -71,3 +66,9 @@ int main(int argc, char* argv[]) {
 
     return 0;
 }
+
+#ifdef _WIN32
+extern "C" int WINAPI WinMain(HINSTANCE hInst, HINSTANCE hPrev, LPSTR szCmdLine, int sw) {
+    return main(__argc, __argv);
+}
+#endif
