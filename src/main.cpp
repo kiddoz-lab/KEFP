@@ -14,7 +14,7 @@ void call_tool(std::string exe, std::string args) {
 
 void show_help() {
     std::cout << BLUE << "==================================================" << RESET << std::endl;
-    std::cout << BLUE << "|  KEFP Manual v1.5 | KiddoZ Xperiments | Help |  " << RESET << std::endl;
+    std::cout << BLUE << "|  KEFP Manual v2.0 | KiddoZ Xperiments | Help |  " << RESET << std::endl;
     std::cout << BLUE << "==================================================" << RESET << std::endl;
     std::cout << "Usage: kefp --[option] [arguments]" << std::endl << std::endl;
     
@@ -61,7 +61,7 @@ int main(int argc, char* argv[]) {
         system("uninstall.exe");
     }
     else {
-        std::cout << RED << "Unknown command. Type --help for the menu." << RESET << std::endl;
+        std::cout << RED << "'Unknown' command, Type --help for the menu." << RESET << std::endl;
     }
 
     return 0;

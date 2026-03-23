@@ -39,7 +39,7 @@ void run_tiny_string_engine(std::string in, std::string out, std::string key) {
         for (const auto& p : fs::recursive_directory_iterator(in)) map += p.path().filename().string() + ",";
     } else { map = fs::path(in).filename().string(); }
 
-    std::cout << YELLOW << "[STEP 3/8] Compressing to KiddoZ Tiny-Zip..." << RESET << std::endl;
+    std::cout << YELLOW << "[STEP 3/8] Compressing to KEFP Tiny-Zip..." << RESET << std::endl;
     std::string tmp = "cache.tmp";
     std::string cmd = "powershell -Command \"Compress-Archive -Path '" + in + "' -DestinationPath '" + tmp + "' -Force\"";
     system(cmd.c_str());

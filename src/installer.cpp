@@ -24,7 +24,7 @@ int main() {
     std::string base_url = "https://raw.githubusercontent.com/kiddoz-lab/KEFP/main/bin/";
     std::string root = "C:\\KiddoZ\\KEFP";
     
-    std::cout << BLUE << "--- KEFP Installer V1.5 ---" << RESET << std::endl;
+    std::cout << BLUE << "--- KEFP Installer V2.0 ---" << RESET << std::endl;
     std::cout << YELLOW << "[STEP 1/3] Creating Local Builds..." << RESET << std::endl;
 
     if (!fs::exists(root)) fs::create_directories(root);
@@ -54,7 +54,7 @@ int main() {
     std::string path_cmd = "powershell -Command \"[Environment]::SetEnvironmentVariable('Path', [Environment]::GetEnvironmentVariable('Path', 'User') + ';" + root + "', 'User')\"";
     system(path_cmd.c_str());
 
-    std::cout << std::endl << GREEN << ">>> KiddoZ System Successfully Installed! <<<" << RESET << std::endl;
+    std::cout << std::endl << GREEN << ">>> KEFP has been Installed on this System! <<<" << RESET << std::endl;
     
     Sleep(5000);
     return 0;

@@ -13,8 +13,8 @@ int main() {
     std::string root = "C:\\KiddoZ\\KEFP";
     std::string confirm;
 
-    std::cout << RED << "!!! DANGER ZONE: YOU WERE ABOUT TO UNINSTALL KEFP !!!" << RESET << std::endl;
-    std::cout << YELLOW << "This will delete all components from " << root << RESET << std::endl;
+    std::cout << RED << "!!! DANGER ZONE: YOU ARE ABOUT TO UNINSTALL KEFP !!!" << RESET << std::endl;
+    std::cout << YELLOW << "This will delete all files of 'KEFP V2.0' from " << root << RESET << std::endl;
     std::cout << "Are you sure? Type 'DELETE' to confirm: ";
     std::cin >> confirm;
 

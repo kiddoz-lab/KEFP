@@ -26,6 +26,6 @@ int main(int argc, char* argv[]) {
     if (argc < 2) return 1;
     std::string mode = argv[1];
     if (mode == "--tts" && argc > 2) run_tts(argv[2]);
-    if (mode == "--licence") open_license();
+    if (mode == "--license") open_license();
     return 0;
 }

@@ -14,7 +14,7 @@ const std::string RESET = "\033[0m";
 void run_update() {
     std::string repo = "https://raw.githubusercontent.com/kiddoz-lab/KEFP/main/bin/";
     
-    std::cout << YELLOW << "[CHECK] Linking with KEFP's repo..." << RESET << std::endl;
+    std::cout << YELLOW << "[CHECK] Linking with KEFP's repository..." << RESET << std::endl;
     system("powershell -Command \"Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/kiddoz-lab/KEFP/main/bin/config/version' -OutFile 'config/version_new'\"");
 
     std::ifstream v_l("config/version");
@@ -24,7 +24,7 @@ void run_update() {
     v_l.close(); v_r.close();
 
     if (l_v != r_v) {
-        std::cout << BLUE << "[Update] New version found: " << r_v << RESET << std::endl;
+        std::cout << BLUE << "[UPDATE] New version found: " << r_v << RESET << std::endl;
         std::string core[] = {"kefp.exe", "updater.exe", "uninstall.exe"};
         std::string tools[] = {"encrypt.exe", "decrypt.exe", "extra.exe"};
 

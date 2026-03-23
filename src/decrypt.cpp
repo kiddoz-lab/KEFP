@@ -33,7 +33,7 @@ std::vector<unsigned char> decode_z85(const std::string& data) {
 }
 
 void run_decrypt_engine(std::string in, std::string out, std::string key) {
-    std::cout << YELLOW << "[STEP 1/8] Opening KiddoZ Package: " << in << RESET << std::endl;
+    std::cout << YELLOW << "[STEP 1/8] Opening KEFP Package: " << in << RESET << std::endl;
     std::ifstream fin(in);
     if (!fin.is_open()) { std::cout << RED << "File Error." << RESET << std::endl; return; }
 
