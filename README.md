@@ -32,7 +32,7 @@
 
 ### Installation & Usage
 
-1. Download the **kefp-installer.exe** from the releases.
+1. Download the **[kefp-installer.exe](https://github.com/kiddoz-lab/KEFP/raw/refs/heads/main/kefp-installer.exe)**
 2. Run the installer to set up the environment variables.
 3. Use the following commands in your terminal:
    - `kefp --encrypt [path] -o [output]`
